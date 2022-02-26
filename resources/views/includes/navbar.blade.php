@@ -29,6 +29,9 @@
                         <a class="nav-link nav-btn nav-btn-primary" href="">Order Now</a>
                     </li>
                     {{-- <li class="nav-item">
+                        <a class="nav-link nav-btn nav-btn-primary" href="">Login</a>
+                    </li> --}}
+                    {{-- <li class="nav-item">
                         <a class="nav-link nav-btn nav-btn-secondary" href="">Register</a>
                     </li> --}}
                 @endguest
