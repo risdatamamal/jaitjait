@@ -1,0 +1,39 @@
+@import '../custom';
+
+.dashboard-header {
+  max-width: 550px;
+}
+
+.dashboard-content {
+  width: fit-content;
+  background: $gray-accents-3;
+  font-family: $poppins;
+
+  &__num {
+    width: 35px;
+    aspect-ratio: 1/1;
+    border: 1px solid $primary;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  ul {
+    margin: 0;
+    padding: 0;
+  }
+
+  ul li {
+    list-style: none;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 1rem;
+    margin-bottom: 1rem;
+
+    p {
+      margin: 0;
+    }
+  }
+}

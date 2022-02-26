@@ -1,0 +1,20 @@
+@import '../custom';
+
+.login {
+  background-color: $gray-accents-4;
+}
+
+.login-form {
+  width: 300px;
+  background: white;
+  font-family: $poppins;
+  border-radius: 20px;
+
+  @media (min-width: 768px) {
+    width: 375px;
+  }
+
+  a {
+    text-decoration: none;
+  }
+}

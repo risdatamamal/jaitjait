@@ -1,0 +1,22 @@
+@import '../custom';
+
+.footer {
+  padding: 1rem 0;
+  font-family: $poppins;
+
+  &-list {
+    li {
+      color: $primary;
+
+      a {
+        text-decoration: none;
+      }
+    }
+  }
+}
+
+.socmed {
+  a {
+    margin: 0 5px;
+  }
+}

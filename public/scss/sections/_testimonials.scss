@@ -1,0 +1,57 @@
+@import '../custom';
+
+.testimonials {
+  background-color: $red-accents-4;
+  padding: 1rem 0;
+  position: relative;
+
+  &__card {
+    color: white;
+    background-color: $primary;
+    padding: 2rem 1.25rem;
+    border-radius: 0.625rem;
+    height: auto;
+    text-align: center;
+
+    i {
+      font-size: 1.25rem;
+    }
+
+    .ratings {
+      i {
+        font-size: 1rem;
+      }
+    }
+  }
+
+  &__picture {
+    width: 17rem !important;
+    aspect-ratio: 1/1;
+
+    img {
+      border: 0.325rem solid rgba($primary, 0.7);
+    }
+  }
+
+  &__name {
+    text-align: center;
+    font-weight: 500;
+    color: white;
+
+    h3 {
+      padding-top: 0.8rem;
+      text-transform: capitalize;
+    }
+
+    p {
+      text-transform: capitalize;
+    }
+  }
+}
+
+.icon-180 {
+  transform: rotate(180deg);
+  -moz-transform: rotate(180deg);
+  -webkit-transform: rotate(180deg);
+  -ms-transform: rotate(180deg);
+}

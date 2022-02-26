@@ -1,0 +1,14 @@
+@use 'custom';
+@use './components/navbar';
+@use './components/sidebar';
+@use './sections/hero';
+@use './sections/welcome';
+@use './sections/strength';
+@use './sections/lesson';
+@use './sections/testimonials';
+@use './sections/footer';
+@use './pages/login';
+@use './pages/register';
+@use './pages/dashboard';
+@use './pages/myprofile';
+/*# sourceMappingURL=style.css.map */

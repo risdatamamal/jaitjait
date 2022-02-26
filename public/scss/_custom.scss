@@ -1,0 +1,28 @@
+// variable overrides
+$primary: #3e408b;
+$purple-accents-1: #4346a7;
+$purple-accents-2: #5053be;
+$purple-accents-3: #6366e9;
+
+$secondary: #fbae22;
+$yellow-accents-1: #e29b1b;
+$yellow-accents-2: #fbc259;
+$yellow-accents-3: #ffdea8;
+
+$red-accents-1: #f15e4a;
+$red-accents-2: #f17c6b;
+$red-accents-3: #ef9d91;
+$red-accents-4: #ecd0cc;
+
+$gray-accents-1: #b4b4b4;
+$gray-accents-2: #cfcfcf;
+$gray-accents-3: #e2e2e2;
+$gray-accents-4: #f1f1f1;
+
+// fonts
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&family=Quicksand:wght@300;400;500;600;700&display=swap');
+$quicksand: 'Quicksand', sans-serif;
+$poppins: 'Poppins', sans-serif;
+
+// import bootstrap
+@import '../node_modules/bootstrap/scss/bootstrap';
