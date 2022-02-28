@@ -22,6 +22,12 @@
                 <li class="nav-item">
                     <a class="nav-link" href="">Consultation</a>
                 </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="">Article</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="">Our Partners</a>
+                </li>
 
                 {{-- Navbar Jika Belum Login/Register --}}
                 @guest

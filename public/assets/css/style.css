@@ -44583,12 +44583,6 @@ textarea.form-control-lg {
 .img-wrapper {
   font-family: "Poppins", sans-serif;
 }
-.img-wrapper .img-teacher {
-  background-color: #FDE3F0;
-  border-radius: 100%;
-  z-index: 4;
-  width: 400px;
-}
 .img-wrapper .floating-desc {
   position: absolute;
   background-color: white;
@@ -55834,6 +55828,10 @@ textarea.form-control-lg {
   width: 142px;
   margin: 0 auto;
 }
+.consultation-btn {
+  width: 197px;
+  margin: 0 auto;
+}
 @media (min-width: 768px) {
   .learn-more-btn {
     margin: 0;
@@ -66969,7 +66967,15 @@ textarea.form-control-lg {
   }
 }
 .strength {
-  background-color: #ecd0cc;
+  background-color: #F6A9CE;
+  padding: 2rem 0;
+}
+.service {
+  background-color: #9E3668;
+  padding: 2rem 0;
+}
+.consultation {
+  background-color: #9E3668;
   padding: 2rem 0;
 }
 
@@ -67024,25 +67030,25 @@ textarea.form-control-lg {
   font-size: 12px;
 }
 
-.achievement-wrapper {
+.sponsor-wrapper {
   background-color: #9E3668;
   padding: 1rem 1rem;
   font-family: "Poppins", sans-serif;
   border-radius: 10px;
 }
 @media (min-width: 1024px) {
-  .achievement-wrapper {
+  .sponsor-wrapper {
     padding: 1rem 2rem;
   }
 }
-.achievement-wrapper .achievement {
+.sponsor-wrapper .achievement {
   color: white;
 }
-.achievement-wrapper .achievement span {
+.sponsor-wrapper .achievement span {
   color: #fbae22;
 }
 @media (min-width: 1024px) {
-  .achievement-wrapper .achievement {
+  .sponsor-wrapper .achievement {
     font-size: 24px;
   }
 }

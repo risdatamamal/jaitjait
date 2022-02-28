@@ -23,10 +23,10 @@
                     <button class="btn btn-primary learn-more-btn mb-4" style="border-radius: 10px;">Get Started</button>
                 </div>
                 <div class="img-wrapper position-relative col-12 col-md-6">
-                    <img class="img-fluid img-welcome d-block mx-auto" src="./assets/images/model-home.png"
+                    <img class="img-fluid d-block mx-auto" src="./assets/images/model-home.png"
                         alt="model" />
                 </div>
-                <div class="achievement-wrapper row justify-content-center gap-3 gap-md-0 mb-5 bg-light">
+                <div class="sponsor-wrapper row justify-content-center gap-3 gap-md-0 mb-5" style="background-color: #FFFFFF">
                     <div class="achievement col-12 col-md-4 text-center" style="color: #999999">
                         <img src="./assets/images/airbnb-logo.png" alt="airbnb">
                     </div>
@@ -47,36 +47,36 @@
         </div>
     </section>
 
-    <!-- STRENGTH SECTION -->
-    <section class="strength" id="strength">
+    <!-- SERVICE SECTION -->
+    <section class="service" id="service">
         <h1 class="title">
-            <span>Feature</span>
+            <span style="color: #FAFAFA;">Service</span>
         </h1>
         <h2 class="subtitle">
-            <span>The benefit of using <br>our platform</span>
+            <span style="color: #FFFFFF;">The benefit of using <br>our platform</span>
         </h2>
         <div class="container mt-5 px-5">
             <div class="content-wrapper row justify-content-center gap-lg-3">
                 <div class="content col-12 col-sm-6 col-lg-3">
                     <img src="./assets/images/local-tailor.png" alt="local tailor" class="mb-3" />
-                    <h3>Local Tailor</h3>
-                    <p>
+                    <h3 style="color: #FAFAFA;">Local Tailor</h3>
+                    <p style="color: #FAFAFA;">
                         Lorem Ipsum is simply dummy text of the printing and typesetting
                         industry
                     </p>
                 </div>
                 <div class="content col-12 col-sm-6 col-lg-3">
                     <img src="./assets/images/free-consultation.png" alt="free consultation" class="mb-3" />
-                    <h3>Free Consultation</h3>
-                    <p>
+                    <h3 style="color: #FAFAFA;">Free Consultation</h3>
+                    <p style="color: #FAFAFA;">
                         Lorem Ipsum is simply dummy text of the printing and typesetting
                         industry
                     </p>
                 </div>
                 <div class="content col-12 col-sm-6 col-lg-3">
                     <img src="./assets/images/fashion-designer.png" alt="fashion designer" class="mb-3" />
-                    <h3>Fashion Designer</h3>
-                    <p>
+                    <h3 style="color: #FAFAFA;">Fashion Designer</h3>
+                    <p style="color: #FAFAFA;">
                         Lorem Ipsum is simply dummy text of the printing and typesetting
                         industry
                     </p>
@@ -95,7 +95,7 @@
                 </div>
                 <div class="title-wrapper col-12 col-md-6 mt-5 mt-md-2 position-relative">
                     <h1 class="subtitle">
-                        <span>Steps to order our service.</span>
+                        <span style="color: #000000;">Steps to order our service.</span>
                     </h1>
                     <p class="title-details">
                         <img src="./assets/images/Number-1.png">
@@ -127,15 +127,13 @@
         <div class="container">
             <div class="row justify-content-center">               
                 <div class="left-w-wrapper col-12 col-md-6">
-                    <h2 class="subtitle text-lg-start">
-                        <span>Choose your tailor and</span>
+                    <h2 class="subtitle text-lg-start" style="font-size: 48px;">
+                        <span  style="color: #000000;">Find your best tailor or</span>
                         <br />
-                        <span>order now</span>
+                        <span  style="color: #000000;">fashion designer</span>
                     </h2>
                     <p class="welcome-details text-center text-md-start">
-                        Enjoy the services of our professional tailors and fashion 
-                        <br />
-                        designers by clicking the following button
+                        We have some of the best tailors and fashion designers
                     </p>
                     <button class="btn btn-primary learn-more-btn mb-4" style="border-radius: 10px;">Order Now</button>
                 </div>
@@ -158,6 +156,9 @@
 
     <!-- TESTIMONIAL SECTION -->
     <section class="testimonials" id="testimonials">
+        <h1 class="title">
+            <span>Testimonials</span>
+        </h1>
         <h2 class="subtitle">
             <span>See what they're saying about us</span>
         </h2>
@@ -268,6 +269,27 @@
                             data-bs-slide="next"><i class="fas fa-arrow-right"></i>
                         </button>
                     </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CONSULTATION SECTION -->
+    <section class="consultation" id="consultation">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="title-wrapper col-12 col-md-6 mt-5 mt-md-2 position-relative">
+                    <h1 class="title fw-normal">
+                        <span style="color: #FAFAFA;">Confused about your fashion problem?</span>
+                    </h1>
+                    <h2 class="subtitle">
+                        <span style="color: #FFFFFF;">Let’s consultation now!</span>
+                    </h2>
+                    <button class="btn btn-primary consultation-btn mt-4" style="border-radius: 10px; background-color: #fff; color: #9E3668">Consultation now</button>
+                </div>
+                <div class="img-wrapper position-relative col-12 col-md-6">
+                    <img class="img-fluid img-teacher d-block mx-auto" src="./assets/images/young-woman.png"
+                        alt="young woman" />
                 </div>
             </div>
         </div>
