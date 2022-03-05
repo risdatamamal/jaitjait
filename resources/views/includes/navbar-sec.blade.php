@@ -14,18 +14,6 @@
                         href="{{ route('home') }}">Home</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="">About</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="">Services</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="">Testimonials</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="">Consultation</a>
-                </li>
-                <li class="nav-item">
                     <a class="nav-link {{ request()->is('article') ? 'active' : '' }}" href="{{ route('article') }}">Article</a>
                 </li>
                 <li class="nav-item">

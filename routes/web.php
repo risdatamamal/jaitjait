@@ -2,6 +2,8 @@
 
 use Illuminate\Support\Facades\{Route, Auth};
 use App\Http\Controllers\HomeController;
+use App\Http\Controllers\ArticleController;
+use App\Http\Controllers\OurPartnerController;
 
 /*
 |--------------------------------------------------------------------------
@@ -17,3 +19,5 @@ use App\Http\Controllers\HomeController;
 Auth::routes();
 
 Route::get('/', [HomeController::class, 'index'])->name('home');
+Route::get('/article', [ArticleController::class, 'index'])->name('article');
+Route::get('/our-partner', [OurPartnerController::class, 'index'])->name('our-partner');
