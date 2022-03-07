@@ -78172,20 +78172,20 @@ textarea.form-control-lg {
     display: none !important;
   }
 }
-.lesson {
+.our-partner {
   padding: 1rem;
-  background-color: #f1f1f1;
+  background-color: #fff;
 }
-.lesson .card {
+.our-partner .card {
   border-radius: 10px;
   padding: 0;
   font-family: "Poppins", sans-serif;
 }
-.lesson .card img {
+.our-partner .card img {
   background-color: #9E3668;
   border-radius: 10px 10px 0 0;
 }
-.lesson .card-link {
+.our-partner .card-link {
   text-decoration: none;
 }
 
@@ -82636,11 +82636,14 @@ textarea.form-control-lg {
 
 .card-title {
   margin-bottom: 0.5rem;
+  font-weight: bold;
+  font-size: 24px;
 }
 
 .card-subtitle {
   margin-top: -0.25rem;
   margin-bottom: 0;
+  font-size: 14px;
 }
 
 .card-text:last-child {
@@ -96204,8 +96207,17 @@ textarea.form-control-lg {
   flex: 1 1 auto !important;
 }
 
+.fa-star {
+  color: #FFCE31;
+}
+
+.fa-clock {
+  color: #FE8D76;
+}
+
 .flex-row {
   flex-direction: row !important;
+  padding: 0 0.5rem;
 }
 
 .flex-column {

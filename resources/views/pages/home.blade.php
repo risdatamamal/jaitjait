@@ -85,7 +85,7 @@
         </div>
     </section>
 
-    <!-- STEP SECTION -->
+    <!-- ORDER SECTION -->
     <section class="order" id="order">
         <div class="container">
             <div class="row justify-content-center">
