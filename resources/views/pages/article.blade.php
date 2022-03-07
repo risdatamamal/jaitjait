@@ -46,4 +46,77 @@
             </div>
         </div>
     </section>
+
+    <!-- ARTICLE SECTION -->
+    <section class="article" id="article">
+      <div class="container my-5">
+        <div class="row justify-content-center gap-5 mb-5">
+            <div class="card shadow" style="width: 966px;">
+                <div class="row d-flex align-items-center">
+                    <div class="col-md-8">
+                        <div class="card-body">
+                            <h5 class="card-title">long established</h5>
+                            <p class="card-subtitle">It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that....</p>
+                        </div>
+                        <div class="d-flex flex-row justify-content-between mb-3">
+                            <div class="p-2 card-subtitle">May 20th 2020</div>
+                            <a href="#" class="card-link">Read more</a>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <img src="./assets/images/article-1.png" class="img-fluid card-img-bottom rounded-end" alt="...">
+                    </div>
+                </div>
+            </div> 
+        </div> 
+        <div class="row row-cols-1 row-cols-lg-3 justify-content-center gap-5 mb-5">
+          <div class="card shadow" style="width: 18rem">
+            <img
+              src="./assets/images/article-1.png"
+              class="card-img-top"
+              alt="..."
+            />
+            <div class="card-body">
+              <h5 class="card-title">long established</h5>
+              <p class="card-subtitle">It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that....</p>
+            </div>
+            <div class="d-flex flex-row justify-content-between mb-3">
+                <div class="p-2 card-subtitle">May 20th 2020</div>
+                <a href="#" class="card-link me-2">Read more</a>
+            </div>
+          </div>
+          <div class="card shadow" style="width: 18rem">
+            <img
+              src="./assets/images/article-2.png"
+              class="card-img-top"
+              alt="..."
+            />
+            <div class="card-body">
+              <h5 class="card-title">long established</h5>
+              <p class="card-subtitle">It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that....</p>
+            </div>
+            <div class="d-flex flex-row justify-content-between mb-3">
+                <div class="p-2 card-subtitle">May 20th 2020</div>
+                <a href="#" class="card-link me-2">Read more</a>
+            </div>
+          </div>
+          <div class="card shadow" style="width: 18rem">
+            <img
+              src="./assets/images/article-3.png"
+              class="card-img-top"
+              alt="..."
+            />
+            <div class="card-body">
+              <h5 class="card-title">long established</h5>
+              <p class="card-subtitle">It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that....</p>
+            </div>
+            <div class="d-flex flex-row justify-content-between mb-3">
+                <div class="p-2 card-subtitle">May 20th 2020</div>
+                <a href="#" class="card-link me-2">Read more</a>
+            </div>
+          </div>
+          <button class="btn btn-primary learn-more-btn" style="border-radius: 10px;">See more<i class="fas fa-arrow-down ms-2"></i></button>
+        </div>
+      </div>
+    </section>
 @endsection
