@@ -19,10 +19,9 @@
                 </h5>
                 <ul class="list-inline footer-list">
                     <li><a href="#" style="color: #D9DBE1">About us</a></li>
-                    <li><a href="#" style="color: #D9DBE1">Blog</a></li>
-                    <li><a href="#" style="color: #D9DBE1">Contact us</a></li>
+                    <li><a href="{{ route('article') }}" style="color: #D9DBE1">Blog</a></li>
                     <li><a href="#" style="color: #D9DBE1">How it works</a></li>
-                    <li><a href="#" style="color: #D9DBE1">For freelancer</a></li>
+                    <li><a href="#" style="color: #D9DBE1">For tailor</a></li>
                 </ul>
             </div>
             <div class="col-12 col-sm-6 col-lg-2 mb-4 mx-auto w-auto">
@@ -39,13 +38,13 @@
                 <h5 class="text-capitalize fw-bold text-white">Contact Us</h5>
                 <ul class="list-inline footer-list">
                     <li style="color: #D9DBE1">
-                        <a href="#" style="color: #D9DBE1">
-                            <i class="fab fa-whatsapp" style="color: #D9DBE1"></i> +628122915117
+                        <a href="https://wa.me/6285155098853" style="color: #D9DBE1">
+                            <i class="fab fa-whatsapp"></i> +6285155098853
                         </a>
                     </li>
                     <li>
-                        <a href="#" style="color: #D9DBE1">
-                            <i href="#" class="far fa-envelope"></i> jaitjait@gmail.com
+                        <a href="mailto:itsjaitjait@gmail.com" style="color: #D9DBE1">
+                            <i class="far fa-envelope"></i> itsjaitjait@gmail.com
                         </a>
                     </li>
                 </ul>

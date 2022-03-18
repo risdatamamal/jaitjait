@@ -14,16 +14,13 @@
                         href="{{ route('home') }}">Home</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="">About</a>
+                    <a class="nav-link" href="#service">Services</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="">Services</a>
+                    <a class="nav-link" href="#testimonials">Testimonials</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="">Testimonials</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="">Consultation</a>
+                    <a class="nav-link" href="#consultation">Consultation</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link {{ request()->is('article') ? 'active' : '' }}" href="{{ route('article') }}">Article</a>
@@ -35,7 +32,7 @@
                 {{-- Navbar Jika Belum Login/Register --}}
                 @guest
                     <li class="nav-item">
-                        <a class="nav-link nav-btn nav-btn-primary" href="">Order Now</a>
+                        <a class="nav-link nav-btn nav-btn-primary" href="https://wa.me/6285155098853">Order Now</a>
                     </li>
                     {{-- <li class="nav-item">
                         <a class="nav-link nav-btn nav-btn-primary" href="">Login</a>

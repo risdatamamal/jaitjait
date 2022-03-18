@@ -20,7 +20,7 @@
                     <p class="welcome-details text-center text-md-start">
                         JaitJait is a #1 platform in Indonesia where you can easily found tailor with a good price.
                     </p>
-                    <button class="btn btn-primary learn-more-btn mb-4" style="border-radius: 10px;">Get Started</button>
+                    <button class="btn btn-primary learn-more-btn mb-4" style="border-radius: 10px;" onclick="window.location.href='#strength'">Get Started</button>
                 </div>
                 <div class="img-wrapper position-relative col-12 col-md-6">
                     <img class="img-fluid d-block mx-auto" src="./assets/images/model-home.png"
@@ -135,7 +135,7 @@
                     <p class="welcome-details text-center text-md-start">
                         We have some of the best tailors and fashion designers
                     </p>
-                    <button class="btn btn-primary learn-more-btn mb-4" style="border-radius: 10px;">Order Now</button>
+                    <button class="btn btn-primary learn-more-btn mb-4" style="border-radius: 10px;" onclick="window.location.href='https://wa.me/6285155098853'">Order Now</button>
                 </div>
                 <div class="img-wrapper position-relative col-12 col-md-6">
                     <div class="floating-desc floating-desc--1  text-center">
@@ -285,7 +285,7 @@
                     <h2 class="subtitle">
                         <span style="color: #FFFFFF;">Let’s consultation now!</span>
                     </h2>
-                    <button class="btn btn-primary consultation-btn mt-4" style="border-radius: 10px; background-color: #fff; color: #9E3668">Consultation now</button>
+                    <button class="btn btn-primary consultation-btn mt-4" style="border-radius: 10px; background-color: #fff; color: #9E3668" onclick="window.location.href='https://wa.me/6285155098853'">Consultation now</button>
                 </div>
                 <div class="img-wrapper position-relative col-12 col-md-6">
                     <img class="img-fluid img-teacher d-block mx-auto" src="./assets/images/young-woman.png"
