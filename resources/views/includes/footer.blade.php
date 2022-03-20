@@ -19,7 +19,7 @@
                 </h5>
                 <ul class="list-inline footer-list">
                     <li><a href="#" style="color: #D9DBE1">About us</a></li>
-                    <li><a href="{{ route('article') }}" style="color: #D9DBE1">Blog</a></li>
+                    <li><a href="{{ route('articles') }}" style="color: #D9DBE1">Blog</a></li>
                     <li><a href="#" style="color: #D9DBE1">How it works</a></li>
                     <li><a href="#" style="color: #D9DBE1">For tailor</a></li>
                 </ul>

@@ -23,7 +23,7 @@
                     <a class="nav-link" href="#consultation">Consultation</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link {{ request()->is('article') ? 'active' : '' }}" href="{{ route('article') }}">Article</a>
+                    <a class="nav-link {{ request()->is('articles') ? 'active' : '' }}" href="{{ route('articles') }}">Article</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link {{ request()->is('our-partner') ? 'active' : '' }}" href="{{ route('our-partner') }}">Our Partners</a>
