@@ -5,6 +5,8 @@ use App\Http\Controllers\HomeController;
 use App\Http\Controllers\ArticlesController;
 use App\Http\Controllers\OurPartnerController;
 
+use App\Http\Controllers\Admin\DashboardAdminController;
+
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -21,3 +23,10 @@ Auth::routes();
 Route::get('/', [HomeController::class, 'index'])->name('home');
 Route::get('/articles', [ArticlesController::class, 'index'])->name('articles');
 Route::get('/our-partner', [OurPartnerController::class, 'index'])->name('our-partner');
+
+Route::prefix('admin')
+    ->middleware(['auth:sanctum', 'admin'])
+    ->group(function() {
+        // dashboard
+        Route::get('/', [DashboardAdminController::class, 'index'])->name('admin-dashboard');
+    });
