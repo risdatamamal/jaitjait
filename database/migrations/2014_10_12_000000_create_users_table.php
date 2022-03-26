@@ -21,9 +21,9 @@ class CreateUsersTable extends Migration
             $table->string('phone');
             $table->longText('address');
             $table->enum('gender', ['Male', 'Female', 'Undefined'])->default('Undefined');
-            $table->string('birthday');
+            $table->date('birthday');
             $table->float('height')->nullable();
-            $table->float('weight')->nullable;
+            $table->float('weight')->nullable();
             $table->string('image_url')->nullable();
             $table->timestamp('email_verified_at')->nullable();
 			$table->softDeletes();

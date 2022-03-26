@@ -20,8 +20,6 @@ class CreateArticlesTable extends Migration
 			$table->string('title');
 			$table->string('body');
 			$table->integer('like_count')->default(0);
-			$table->unsignedBigInteger('comment_id');
-			$table->foreign('comment_id')->references('id')->on('comments')->onUpdate('cascade')->onDelete('cascade');
             $table->timestamps();
         });
     }
