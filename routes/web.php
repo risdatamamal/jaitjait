@@ -24,9 +24,19 @@ Route::get('/', [HomeController::class, 'index'])->name('home');
 Route::get('/articles', [ArticlesController::class, 'index'])->name('articles');
 Route::get('/our-partner', [OurPartnerController::class, 'index'])->name('our-partner');
 
+
+// ADMIN
 Route::prefix('admin')
     ->middleware(['auth:sanctum', 'admin'])
     ->group(function() {
         // dashboard
-        Route::get('/', [DashboardAdminController::class, 'index'])->name('admin-dashboard');
+        Route::get('/dashboard-admin', [DashboardAdminController::class, 'index'])->name('dashboard-admin');
+    });
+
+
+// TAILOR
+Route::prefix('tailor')
+    ->middleware(['auth:sanctum', 'tailor'])
+    ->group(function() {
+        
     });

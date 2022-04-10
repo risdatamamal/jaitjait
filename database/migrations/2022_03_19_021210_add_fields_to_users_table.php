@@ -14,7 +14,7 @@ class AddFieldsToUsersTable extends Migration
     public function up()
     {
         Schema::table('users', function (Blueprint $table) {
-            $table->foreignId('role_id')->after('address')->constrained();
+            $table->foreignId('role_id')->default(3)->after('address')->constrained();
 			$table->foreignId('district_id')->after('role_id')->constrained();
 			$table->foreignId('province_id')->after('district_id')->constrained();
         });

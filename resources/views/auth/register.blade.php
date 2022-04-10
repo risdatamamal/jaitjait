@@ -17,8 +17,7 @@
                             @csrf
                             <div class="mb-3">
                                 <label class="form-label">Nama Lengkap</label>
-                                <input id="name" type="text" class="form-control" placeholder="Your Name" @error('name')
-                                    is-invalid @enderror" name="name" value="{{ old('name') }}" required
+                                <input id="name" type="text" class="form-control @error('name') is-invalid @enderror rounded-pill" name="name" placeholder="Your Name" value="{{ old('name') }}" required
                                     autocomplete="name" autofocus>
                                 @error('name')
                                     <span class="invalid-feedback" role="alert">
@@ -29,8 +28,7 @@
                             <div class="mb-3">
                                 <label class="form-label">Email address</label>
                                 <input id="email" type="email" placeholder="youremail@gmail.com"
-                                    class="form-control 
-                        @error('email') is-invalid @enderror"
+                                    class="form-control @error('email') is-invalid @enderror rounded-pill"
                                     name="email" value="{{ old('email') }}" required autocomplete="email">
                                 @error('email')
                                     <span class="invalid-feedback" role="alert">
@@ -40,8 +38,7 @@
                             </div>
                             <div class="mb-3">
                                 <label class="form-label">No. Hp</label>
-                                <input id="phone_number" type="text" class="form-control" placeholder="08xxxxxxxxxx"
-                                    @error('phone_number') is-invalid @enderror" name="phone_number"
+                                <input id="phone_number" type="text" class="form-control rounded-pill @error('phone_number') is-invalid @enderror rounded-pill" name="phone_number" placeholder="08xxxxxxxxxx"
                                     value="{{ old('phone_number') }}" required autocomplete="phone_number" autofocus>
                                 @error('phone_number')
                                     <span class="invalid-feedback" role="alert">
@@ -52,8 +49,7 @@
                             <div class="mb-3">
                                 <label for="password" class="form-label">Password</label>
                                 <input id="password" type="password"
-                                    class="form-control 
-                        @error('password') is-invalid @enderror"
+                                    class="form-control @error('password') is-invalid @enderror rounded-pill"
                                     name="password" required autocomplete="new-password">
                                 @error('password')
                                     <span class="invalid-feedback" role="alert">
@@ -64,8 +60,7 @@
                             <div class="mb-3">
                                 <label for="password-confirm" class="form-label">Confirm Password</label>
                                 <input id="password-confirm" type="password"
-                                    class="form-control 
-                        @error('password_confirmation') is-invalid @enderror"
+                                    class="form-control @error('password_confirmation') is-invalid @enderror rounded-pill"
                                     name="password_confirmation" required autocomplete="new-password">
                                 @error('password_confirmation')
                                     <span class="invalid-feedback" role="alert">

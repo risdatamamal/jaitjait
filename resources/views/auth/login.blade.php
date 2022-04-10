@@ -27,7 +27,7 @@
                       <input 
                           id="email" 
                           type="email" 
-                          class="form-control @error('email') is-invalid @enderror"
+                          class="form-control @error('email') is-invalid @enderror rounded-pill"
                           placeholder="youremail@gmail.com"
                           name="email" 
                           value="{{ old('email') }}" 
@@ -46,7 +46,7 @@
                           id="password" 
                           type="password" 
                           placeholder="password"
-                          class="form-control @error('password') is-invalid @enderror" 
+                          class="form-control @error('password') is-invalid @enderror rounded-pill" 
                           name="password" 
                           required 
                           autocomplete="current-password">
