@@ -15,11 +15,11 @@
                 <div class="p-5">
                   <div class="text-center">
                     <h1 class="h5 text-gray-900 mb-4">Login</h1>
-                    @if ($notification = Session::get('success'))
-                      <div class="alert alert-success">
+                    @if ($notification = Session::get('failed'))
+                      <div class="alert alert-danger">
                           <strong>"{{ $notification }}"</strong>
                       </div>
-                  @endif
+                    @endif
                   </div>
                   <form method="POST" action="{{ route('login') }}">
                     @csrf

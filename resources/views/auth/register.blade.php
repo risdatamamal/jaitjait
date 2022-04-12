@@ -6,6 +6,16 @@
 
 @section('content')
 <div class="container">
+        @if ($notification = Session::get('success-register'))
+            <div class="alert alert-success alert-block">
+                <strong>{{ $notification }}</strong>
+            </div>
+        @endif
+        @if ($notification = Session::get('tidak-berhasil-register'))
+            <div class="alert alert-warning alert-block">
+                <strong>{{ $notification }}</strong>
+            </div>
+        @endif
         <div class="row justify-content-center">
             <div class="col-lg-6 col-md-9">
                 <div class="card o-hidden border-0 shadow-lg my-5 p-2" style="border-radius: 20px;">
@@ -16,8 +26,8 @@
                         <form method="POST" action="{{ route('register') }}">
                             @csrf
                             <div class="mb-3">
-                                <label class="form-label">Nama Lengkap</label>
-                                <input id="name" type="text" class="form-control @error('name') is-invalid @enderror rounded-pill" name="name" placeholder="Your Name" value="{{ old('name') }}" required
+                                <label for="name" class="form-label">Nama Lengkap</label>
+                                <input id="name" type="text" class="form-control @error('name') is-invalid @enderror rounded-pill" name="name" placeholder="your name" value="{{ old('name') }}" required
                                     autocomplete="name" autofocus>
                                 @error('name')
                                     <span class="invalid-feedback" role="alert">
@@ -26,7 +36,7 @@
                                 @enderror
                             </div>
                             <div class="mb-3">
-                                <label class="form-label">Email address</label>
+                                <label for="email" class="form-label">Email address</label>
                                 <input id="email" type="email" placeholder="youremail@gmail.com"
                                     class="form-control @error('email') is-invalid @enderror rounded-pill"
                                     name="email" value="{{ old('email') }}" required autocomplete="email">
@@ -37,10 +47,19 @@
                                 @enderror
                             </div>
                             <div class="mb-3">
-                                <label class="form-label">No. Hp</label>
-                                <input id="phone_number" type="text" class="form-control rounded-pill @error('phone_number') is-invalid @enderror rounded-pill" name="phone_number" placeholder="08xxxxxxxxxx"
-                                    value="{{ old('phone_number') }}" required autocomplete="phone_number" autofocus>
-                                @error('phone_number')
+                                <label for="phone" class="form-label">No. Hp</label>
+                                <input id="phone" type="text" class="form-control rounded-pill @error('phone') is-invalid @enderror rounded-pill" name="phone" placeholder="08xxxxxxxxxx"
+                                    value="{{ old('phone') }}" required autocomplete="phone" autofocus>
+                                @error('phone')
+                                    <span class="invalid-feedback" role="alert">
+                                        <strong>{{ $message }}</strong>
+                                    </span>
+                                @enderror
+                            </div>
+                            <div class="mb-3">
+                                <label for="birthday" class="form-label">Birthday</label>
+                                <input type="date" class="form-control rounded-pill @error('birthday') is-invalid @enderror rounded-pill" id="birthday" name="birthday" value="{{ old('birthday') }}" />
+                                @error('birthday')
                                     <span class="invalid-feedback" role="alert">
                                         <strong>{{ $message }}</strong>
                                     </span>
@@ -50,7 +69,7 @@
                                 <label for="password" class="form-label">Password</label>
                                 <input id="password" type="password"
                                     class="form-control @error('password') is-invalid @enderror rounded-pill"
-                                    name="password" required autocomplete="new-password">
+                                    name="password" required autocomplete="new-password" placeholder="password">
                                 @error('password')
                                     <span class="invalid-feedback" role="alert">
                                         <strong>{{ $message }}</strong>
@@ -61,7 +80,7 @@
                                 <label for="password-confirm" class="form-label">Confirm Password</label>
                                 <input id="password-confirm" type="password"
                                     class="form-control @error('password_confirmation') is-invalid @enderror rounded-pill"
-                                    name="password_confirmation" required autocomplete="new-password">
+                                    name="password_confirmation" required autocomplete="new-password" placeholder="confirm password">
                                 @error('password_confirmation')
                                     <span class="invalid-feedback" role="alert">
                                         <strong>{{ $message }}</strong>
