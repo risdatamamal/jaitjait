@@ -16,10 +16,19 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::middleware('auth:sanctum')->get('/user', function (Request $request) {
-    return $request->user();
+Route::middleware('auth:sanctum')->group(function () 
+{
+    // User
+    Route::get('user', [UsersController::class, 'fetch']);
+    Route::post('user', [UsersController::class, 'updateProfile']);
+    Route::post('user/avatar', [UsersController::class, 'updateAvatar']);
+    Route::post('logout', [UsersController::class, 'logout']);
+
 });
 
+// Auth
+Route::post('login', [UsersController::class, 'login']);
+Route::post('register', [UsersController::class, 'register']);
 
-Route::get('articles/', [ArticlesController::class, 'getArticles']);
-Route::get('users/', [UsersController::class, 'getAllUsers']);
+// Article
+// Route::get('articles/', [ArticlesController::class, 'getArticles']);

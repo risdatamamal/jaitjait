@@ -57,15 +57,6 @@
                                 @enderror
                             </div>
                             <div class="mb-3">
-                                <label for="birthday" class="form-label">Birthday</label>
-                                <input type="date" class="form-control rounded-pill @error('birthday') is-invalid @enderror rounded-pill" id="birthday" name="birthday" value="{{ old('birthday') }}" />
-                                @error('birthday')
-                                    <span class="invalid-feedback" role="alert">
-                                        <strong>{{ $message }}</strong>
-                                    </span>
-                                @enderror
-                            </div>
-                            <div class="mb-3">
                                 <label for="password" class="form-label">Password</label>
                                 <input id="password" type="password"
                                     class="form-control @error('password') is-invalid @enderror rounded-pill"
