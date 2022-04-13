@@ -27,8 +27,8 @@
             </div>
             <div class="px-3 d-flex flex-column h-100" style="background-color: #fff">
                 <a class="nav-link p-3" href="{{ route('dashboard.index') }}">Dashboard</a>
-                <a class="nav-link p-3" href="{{ route('users.index') }}">Users</a>
-                <a class="nav-link p-3" href="{{ route('articles.index') }}">Articles</a>
+                <a class="nav-link p-3" href="">Shop</a>
+                <a class="nav-link p-3" href="">Articles</a>
                 <hr />
                 <form id="logout-form" action="{{ route('logout') }}" method="POST">
                     @csrf

@@ -6,6 +6,10 @@ use App\Http\Controllers\ArticlesController;
 use App\Http\Controllers\OurPartnerController;
 
 use App\Http\Controllers\Admin\DashboardAdminController;
+use App\Http\Controllers\Admin\DashboardArticleController;
+use App\Http\Controllers\Admin\DashboardUserController;
+
+use App\Http\Controllers\Tailor\DashboardTailorController;
 
 /*
 |--------------------------------------------------------------------------
@@ -29,8 +33,9 @@ Route::get('/our-partner', [OurPartnerController::class, 'index'])->name('our-pa
 Route::prefix('admin')
     ->middleware(['auth:sanctum', 'admin'])
     ->group(function() {
-        // dashboard
-        Route::get('/dashboard-admin', [DashboardAdminController::class, 'index'])->name('dashboard-admin');
+        Route::resource('dashboard', DashboardAdminController::class);
+        Route::resource('articles', DashboardArticleController::class);
+        Route::resource('users', DashboardUserController::class);
     });
 
 
@@ -38,5 +43,5 @@ Route::prefix('admin')
 Route::prefix('tailor')
     ->middleware(['auth:sanctum', 'tailor'])
     ->group(function() {
-        
+        Route::resource('dashboard', DashboardTailorController::class);
     });

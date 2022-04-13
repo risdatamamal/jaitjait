@@ -58,11 +58,11 @@
                             </li>
                             @can ('isAdmin')
                                 <li>
-                                    <a class="dropdown-item" href="">Dashboard Admin</a>
+                                    <a class="dropdown-item" href="/admin/dashboard">Dashboard Admin</a>
                                 </li>
                             @elsecan ('isTailor')
                                 <li>
-                                    <a class="dropdown-item" href="">Dashboard Tailor</a>
+                                    <a class="dropdown-item" href="/tailor/dashboard">Dashboard Tailor</a>
                                 </li>
                             @endcan
                             <li>

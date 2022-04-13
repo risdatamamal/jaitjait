@@ -1,7 +1,7 @@
-@extends('layouts.admin')
+@extends('layouts.tailor')
 
 @section('title')
-    Dashboard Admin - Jait Jait
+    Dashboard Tailor - Jait Jait
 @endsection
 
 @section('content')

@@ -38,15 +38,24 @@
                     <li class="nav-item dropdown">
                         <a class="nav-link dropdown-toggle d-inline" href="#" id="navbarDropdownMenuLink" role="button"
                             data-bs-toggle="dropdown" aria-expanded="false">
-                            Budi
+                            {{ Auth::user()->name }}
+                            <?php $image_url = Auth::user()->image_url; ?>
+                            <img src="<?php if($image_url == null){echo '/assets/images/user.png';}
+                            ?>" style="width: {{Auth::user()->image_url == null ? '2.5rem' : '1.5rem' }}; border-radius: 20%" alt="">
                         </a>
                         <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
                             <li>
                                 <a class="dropdown-item disabled">Account</a>
                             </li>
-                            <li>
-                                <a class="dropdown-item" href="">Dashboard Student</a>
-                            </li>
+                            @can ('isAdmin')
+                                <li>
+                                    <a class="dropdown-item" href="/admin/dashboard">Dashboard Admin</a>
+                                </li>
+                            @elsecan ('isTailor')
+                                <li>
+                                    <a class="dropdown-item" href="/tailor/dashboard">Dashboard Tailor</a>
+                                </li>
+                            @endcan
                             <li>
                                 <a class="dropdown-item" href="">Profile</a>
                             </li>
@@ -55,7 +64,7 @@
                             </li>
 
                             <li>
-                                <form id="logout-form" action="" method="POST">
+                                <form id="logout-form" action="{{ route('logout') }}" method="POST">
                                     @csrf
                                     <a href=""
                                         onclick="event.preventDefault(); document.getElementById('logout-form').submit();"

@@ -15,11 +15,18 @@ class CreateArticlesTable extends Migration
     {
         Schema::create('articles', function (Blueprint $table) {
             $table->bigIncrements('id');
-			$table->unsignedBigInteger('tailor_id');
-			$table->foreign('tailor_id')->references('id')->on('tailors')->onUpdate('cascade')->onDelete('cascade');
+
 			$table->string('title');
-			$table->string('body');
+            $table->integer('users_id');
+
+			$table->longText('body');
+            $table->string('photo');
+            $table->string('slug');
+            $table->string('author');
+            
 			$table->integer('like_count')->default(0);
+
+            $table->softDeletes();
             $table->timestamps();
         });
     }
